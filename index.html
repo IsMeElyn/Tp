@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToPen - Top Up Termurah</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/main-A9FQX7L2M8KZP4RD.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="navbar-left">
+            <div class="logo-container">
+                <img src="https://www.elyn.my.id/1000691230-removebg-preview.webp" alt="Logo" id="navbarLogo">
+            </div>
+        </div>
+        <div class="navbar-right">
+            <button class="nav-btn" id="themeToggle">
+                <i class="ri-moon-line"></i>
+            </button>
+            <button class="nav-btn" id="searchBtn">
+                <i class="ri-search-line"></i>
+            </button>
+            <button class="nav-btn" id="menuToggle">
+                <i class="ri-menu-line"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Side Menu -->
+    <div class="side-menu" id="sideMenu">
+        <div class="menu-content">
+            <div class="menu-item menu-header">
+                <span class="menu-title">Top Up</span>
+                <i class="ri-shopping-bag-line"></i>
+            </div>
+            
+            <div class="menu-item">
+                <span class="menu-title">Riwayat Transaksi</span>
+                <i class="ri-folder-line"></i>
+            </div>
+            
+            <div class="menu-item">
+                <span class="menu-title">Cek Transaksi</span>
+                <i class="ri-file-text-line"></i>
+            </div>
+            
+            <div class="menu-item">
+                <span class="menu-title">Leaderboard</span>
+                <i class="ri-star-line"></i>
+            </div>
+            
+            <div class="menu-item dropdown-item" id="languageDropdown">
+                <span class="menu-title">Bahasa</span>
+                <i class="ri-arrow-right-line dropdown-icon"></i>
+            </div>
+            <div class="submenu" id="languageSubmenu">
+                <div class="menu-item submenu-item" data-lang="cn">
+                    <span class="menu-title">🇨🇳 China</span>
+                    <i class="ri-globe-line"></i>
+                </div>
+                <div class="menu-item submenu-item" data-lang="jp">
+                    <span class="menu-title">🇯🇵 Jepang</span>
+                    <i class="ri-globe-line"></i>
+                </div>
+                <div class="menu-item submenu-item" data-lang="kr">
+                    <span class="menu-title">🇰🇷 Korea Selatan</span>
+                    <i class="ri-globe-line"></i>
+                </div>
+                <div class="menu-item submenu-item" data-lang="mn">
+                    <span class="menu-title">🇲🇳 Mongolia</span>
+                    <i class="ri-globe-line"></i>
+                </div>
+                <div class="menu-item submenu-item" data-lang="id">
+                    <span class="menu-title">🇮🇩 Indonesia</span>
+                    <i class="ri-globe-line"></i>
+                </div>
+                <div class="menu-item submenu-item" data-lang="my">
+                    <span class="menu-title">🇲🇾 Malaysia</span>
+                    <i class="ri-globe-line"></i>
+                </div>
+                <div class="menu-item submenu-item" data-lang="sg">
+                    <span class="menu-title">🇸🇬 Singapura</span>
+                    <i class="ri-globe-line"></i>
+                </div>
+                <div class="menu-item submenu-item" data-lang="th">
+                    <span class="menu-title">🇹🇭 Thailand</span>
+                    <i class="ri-globe-line"></i>
+                </div>
+                <div class="menu-item submenu-item" data-lang="vn">
+                    <span class="menu-title">🇻🇳 Vietnam</span>
+                    <i class="ri-globe-line"></i>
+                </div>
+                <div class="menu-item submenu-item" data-lang="ph">
+                    <span class="menu-title">🇵🇭 Filipina</span>
+                    <i class="ri-globe-line"></i>
+                </div>
+                <div class="menu-item submenu-item" data-lang="mm">
+                    <span class="menu-title">🇲🇲 Myanmar</span>
+                    <i class="ri-globe-line"></i>
+                </div>
+                <div class="menu-item submenu-item" data-lang="kh">
+                    <span class="menu-title">🇰🇭 Kamboja</span>
+                    <i class="ri-globe-line"></i>
+                </div>
+                <div class="menu-item submenu-item" data-lang="la">
+                    <span class="menu-title">🇱🇦 Laos</span>
+                    <i class="ri-globe-line"></i>
+                </div>
+                <div class="menu-item submenu-item" data-lang="bn">
+                    <span class="menu-title">🇧🇳 Brunei</span>
+                    <i class="ri-globe-line"></i>
+                </div>
+            </div>
+            
+            <div class="menu-item dropdown-item" id="othersDropdown">
+                <span class="menu-title">Lainnya</span>
+                <i class="ri-arrow-right-line dropdown-icon"></i>
+            </div>
+            <div class="submenu" id="othersSubmenu">
+                <div class="menu-item submenu-item">
+                    <span class="menu-title">Tentang Kami</span>
+                    <i class="ri-information-line"></i>
+                </div>
+                <div class="menu-item submenu-item">
+                    <span class="menu-title">Kontak</span>
+                    <i class="ri-phone-line"></i>
+                </div>
+                <div class="menu-item submenu-item">
+                    <span class="menu-title">Bantuan</span>
+                    <i class="ri-question-line"></i>
+                </div>
+            </div>
+            
+            <div class="menu-actions">
+                <button class="menu-btn signup-btn">
+                    <i class="ri-user-add-line"></i>
+                    Sign Up
+                </button>
+                <button class="menu-btn login-btn">
+                    <i class="ri-login-box-line"></i>
+                    Login
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Banner Slider -->
+        <section class="banner-section">
+            <div class="banner-slider" id="bannerSlider">
+                <!-- Banners will be injected by JS -->
+            </div>
+            <div class="banner-dots" id="bannerDots"></div>
+        </section>
+
+        <!-- Flash Sale -->
+
+<section class="flash-sale-section">
+  <div class="flash-sale-container">
+
+    <div class="flash-sale-header">FLASH DEAL</div>
+
+    <div class="flash-sale-timer">
+      <i class="ri-time-line"></i>
+      <span id="flashTimer">00:00:00</span>
+    </div>
+
+    <div class="flash-sale-content" id="flashSlider"></div>
+
+    <div class="flash-dots" id="flashDots"></div>
+
+  </div>
+             <div class="parallelogram-deco">
+                <div class="parallelogram parallelogram-1"></div>
+                <div class="parallelogram parallelogram-2"></div>
+            </div> 
+</section>
+
+        <!-- Products Section -->
+        <section class="products-section">
+            <div class="section-header">
+                <h2 class="category-title">Games</h2>
+                <button class="filter-btn" id="gamesFilterBtn">
+                    <span>Semua</span>
+                    <i class="ri-arrow-down-s-line"></i>
+                </button>
+            </div>
+            <div class="products-grid" id="gamesGrid">
+                <!-- Products will be injected by JS -->
+            </div>
+        </section>
+
+        <section class="products-section">
+            <div class="section-header">
+                <h2 class="category-title">Voucher</h2>
+                <button class="filter-btn" id="voucherFilterBtn">
+                    <span>Semua</span>
+                    <i class="ri-arrow-down-s-line"></i>
+                </button>
+            </div>
+            <div class="products-grid" id="voucherGrid">
+                <!-- Products will be injected by JS -->
+            </div>
+        </section>
+        
+        <section class="products-section">
+    <div class="section-header">
+        <h2 class="category-title">Entertainment</h2>
+        <button class="filter-btn" id="entertainmentFilterBtn">
+            <span>Semua</span>
+            <i class="ri-arrow-down-s-line"></i>
+        </button>
+    </div>
+    <div class="products-grid" id="entertainmentsGrid">
+        <!-- Products will be injected by JS -->
+    </div>
+    
+</section>
+
+        <!-- Features Section -->
+        <section class="features-section">
+            <h2>Top Up Game Termurah</h2>
+            <p class="subtitle">Nikmati pengalaman pembelian Voucher dan Top Up Game otomatis kapan pun di manapun kamu mau</p>
+            
+            <div class="features-grid">
+                <div class="feature-item">
+                    <i class="ri-price-tag-3-line"></i>
+                    <h3>Harga Terbaik</h3>
+                    <p>Banyak pilihan game dengan harga terbaik dan promo menarik untukmu!</p>
+                </div>
+                <div class="feature-item">
+                    <i class="ri-shield-check-line"></i>
+                    <h3>Transaksi Aman</h3>
+                    <p>Proteksi ekstra untuk keamanan data pribadi dan data pembayaranmu!</p>
+                </div>
+                <div class="feature-item">
+                    <i class="ri-rocket-line"></i>
+                    <h3>Pengiriman Cepat</h3>
+                    <p>Setelah pembayaranmu selesai, kami akan kirim dalam hitungan detik!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- News Section -->
+        <section class="news-section">
+            <h2>Jangan Ketinggalan Info Seputar Game</h2>
+            <p class="subtitle">Baca berita seputar game terbaru! Jangan sampai ketinggalan informasi.</p>
+            
+            <div class="news-slider" id="newsSlider">
+                <!-- News items will be injected by JS -->
+            </div>
+            <div class="news-dots" id="newsDots"></div>
+        </section>
+
+        <!-- Logo Section -->
+<section class="logo-section">
+  <img id="sectionLogo" src="https://www.elyn.my.id/1000691088-removebg-preview.webp" alt="ToPen Logo">
+</section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <p class="footer-description">
+                    ToPen adalah platform Top Up Termurah di Indonesia, Kami menawarkan Beberapa Produk Seperti Kredit Game, Voucher Serta jasa lainnya Kami selalu memberikan kenyamanan untuk anda, Maka dari itu kami selalu ber inovasi untuk membuat ToPen selalu diminati oleh masyarakat Indonesia.
+                </p>
+                
+ <div class="app-download">
+    <h3>Tersedia di</h3>
+<a href="#" class="playstore-link" aria-label="Download di Google Play">
+    <i class="fa-brands fa-google-play"></i>
+</a>
+</div>
+
+                <div class="payment-methods">
+                    <h3>Metode Pembayaran</h3>
+                    <div class="payment-slider" id="paymentSlider">
+                        <!-- Payment methods will be injected by JS -->
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Peta Situs</h4>
+                        <ul>
+                            <li><a href="#about">Tentang Kami</a></li>
+                            <li><a href="#privacy">Kebijakan Privasi</a></li>
+                            <li><a href="#terms">Syarat & Ketentuan</a></li>
+                            <li><a href="#faq">Pertanyaan Umum</a></li>
+                            <li><a href="#support">Dukungan Pelanggan</a></li>
+                            <li><a href="#news">Berita & Informasi</a></li>
+                            <li><a href="#reseller">Gabung Reseller</a></li>
+                            <li><a href="#api">API</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Akses Cepat</h4>
+                        <ul>
+                            <li><a href="#leaderboard">Papan Peringkat</a></li>
+                            <li><a href="#check">Cek Transaksi</a></li>
+                            <li><a href="#reviews">Semua Ulasan</a></li>
+                            <li><a href="#services">Semua Layanan</a></li>
+                            <li><a href="#mlregion">Cek Region Mobile Legend</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Fitur</h4>
+                        <ul>
+                            <li><a href="#services-list">Daftar Layanan</a></li>
+                            <li><a href="#minigames">Mini Games</a></li>
+                            <li><a href="#login">Login/Daftar</a></li>
+                        </ul>
+                    </div>
+                </div>
+               
+<div class="customer-support">
+    <h3>Dukungan Pelanggan ToPen</h3>
+    <div class="social-links">
+        <a href="#" class="social-link whatsapp" aria-label="WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <a href="#" class="social-link instagram" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="#" class="social-link email" aria-label="Email">
+            <i class="fa-solid fa-envelope"></i>
+        </a>
+    </div>
+</div>
+                
+                <div class="footer-divider"></div>
+                
+                <div class="copyright">
+                    <p>Copyright © ToPen Top Up Termurah 2025</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="./assets/js/main-A9FQX7L2M8KZP4RD.js"></script>
+</body>
+</html>
