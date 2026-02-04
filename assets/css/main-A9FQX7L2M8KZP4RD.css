@@ -413,8 +413,8 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  background: linear-gradient(135deg, #7CFF00, #2aff00);
-  color: #000;
+  background: var(--primary-color);
+  color: #00000;
   padding: 10px 32px 10px 20px;
   font-weight: 700;
   font-size: 18px;
@@ -602,7 +602,7 @@ body {
 
 .filter-btn:hover {
     background-color: var(--primary-color);
-    color: white;
+    color: #00000;
 }
 
 .filter-dropdown {
